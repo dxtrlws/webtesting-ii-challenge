@@ -62,7 +62,7 @@ export default class Dashboard extends Component {
       <div>
         <Display fouls={fouls} strikes={strikes} balls={balls} />
         <h3>Hello from Dashboard</h3>
-        <h2>{this.state.status}</h2>
+        <h2 data-testid="hit-status">{this.state.status}</h2>
         <button onClick={this.swing}>Swing</button>
       </div>
     );
